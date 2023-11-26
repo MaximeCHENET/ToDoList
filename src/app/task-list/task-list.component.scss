@@ -1,0 +1,21 @@
+.researchBar {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px auto 40px auto;
+    width: 100%;
+
+    input {
+        width: 20%;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+
+    button {
+        border: none;
+        border-radius: 15px;
+        background-color: rgb(255, 79, 79);
+        padding: 5px 10px;
+    }
+}

@@ -1,0 +1,13 @@
+<!-- Bloc Barre de Recherche -->
+<div class="researchBar">
+    <h3>Filtrer par tags</h3>
+    <!-- Barre de recherche avec filtre des tags -->
+    <input type="text" [(ngModel)]="rechercheTags" (ngModelChange)="updateFilteredTasks()">
+    <p>Filtrez vos tâches par tags</p>
+
+    <!-- Bouton pour supprimer le localStorage -->
+    <button type="submit" (click)="onDeleteAllTasks()">Supprimer toutes les tâches</button>
+</div>
+
+<!-- Affichage des tâches avec filtre des tags -->
+<app-task *ngFor="let Element of filteredTasks" [task]="Element"></app-task>

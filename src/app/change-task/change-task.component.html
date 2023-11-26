@@ -1,0 +1,15 @@
+<div>
+    <form class="formulaire" (ngSubmit)="onSubmit()">
+        <label>Titre:</label>
+        <input type="text" [(ngModel)]="title" name="title" [value]="title" required>
+
+        <div>
+            <label>Terminé:</label>
+            <input type="checkbox" [(ngModel)]="finished" name="finished">
+        </div>
+        <label>Tags :</label>
+        <input type="text" [(ngModel)]="tagsString" name="tagsString">
+        <button type="submit">Modifier</button>
+    </form>
+
+</div>

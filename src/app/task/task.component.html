@@ -1,0 +1,10 @@
+<div class="Task">
+    <p id="id">id: {{ task.id }}</p>
+    <p id="titre">Titre: {{ task.title }}</p>
+    <p id="finished">{{ task.finished ? "✅" : "❌" }}</p>
+    <p id="tags">Tags : {{ task.tags.join(', ') }}</p>
+    <div id="buttons">
+        <button (click)="onChangeTask(task.id)"><mat-icon>edit</mat-icon></button>
+        <button (click)="onDeleteTask(task.id)"><mat-icon>delete</mat-icon></button>
+    </div>
+</div>

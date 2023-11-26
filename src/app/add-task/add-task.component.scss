@@ -1,0 +1,27 @@
+.formulaire {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px auto;
+
+    label {
+        margin-right: 10px;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+    input {
+        margin: 15px 0;
+    }
+    button {
+        margin-top: 30px;
+    }
+}
+
+#finished {
+    margin-bottom: 20px;
+}
+
+.descriptionTags {
+    font-style: italic;
+}

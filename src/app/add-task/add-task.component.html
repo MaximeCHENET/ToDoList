@@ -1,0 +1,16 @@
+<div>
+    <form class="formulaire" (ngSubmit)="onSubmit()">
+        <label>Titre:</label>
+        <input type="text" [(ngModel)]="title" name="title" placeholder="Ce champ est obligatoire." required>
+        <div id="finished">
+            <label>Terminé:</label>
+            <input type="checkbox" [(ngModel)]="finished" name="finished">
+        </div>
+
+        <label>Tags:</label>
+        <input type="text" [(ngModel)]="tags" name="tags" placeholder="Ce champ est obligatoire" required>
+        <p class="descriptionTags">Veuillez séparer chaque tag par une virgule. (Ex: Important, Facile, etc...)</p>
+        <button type="submit">Ajouter</button>
+    </form>
+
+</div>
